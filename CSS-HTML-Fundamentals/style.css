@@ -1,0 +1,44 @@
+/*Syntax:
+selectors {
+  property: value;
+}*/
+
+/*3 places to write CSS:
+-inline: <element style="property: value;">
+-style: <style> ... </style>
+-dedicated file: <link>
+*/
+
+/*Adjacent sibling*/
+h1 + h1 + h1 {
+  font-size: 100px;
+}
+
+/*Attribute selector*/
+[data-category="p-main"] {
+  font-size: 90px;
+}
+
+.ClassExample {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#IdExample {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*General sibling*/
+h2 ~ p {
+  color: red;
+}
+
+/*Direct Child*/
+div > h4 {
+  color: pink;
+}
+
+/*All descendent*/
+div h6 {
+  font-size: 100px;
+}
